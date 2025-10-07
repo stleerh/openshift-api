@@ -87,6 +87,12 @@ type NetworkSpec struct {
 	// +optional
 	// +openshift:enable:FeatureGate=NetworkDiagnosticsConfig
 	NetworkDiagnostics NetworkDiagnostics `json:"networkDiagnostics"`
+
+	// ObservabilityEnabled is an optional field that enables network observability
+	// when set to true.  If the field is omitted or set to false, it does nothing.
+	//
+	// +optional
+	ObservabilityEnabled bool `json:"observabilityEnabled,omitempty"`
 }
 
 // NetworkStatus is the current network configuration.
