@@ -8481,6 +8481,10 @@
           "type": "string",
           "default": ""
         },
+        "observabilityEnabled": {
+          "description": "ObservabilityEnabled is an optional field that enables network observability when set to true.  If the field is omitted or set to false, it does nothing.",
+          "type": "boolean"
+        },
         "serviceNetwork": {
           "description": "IP address pool for services. Currently, we only support a single entry here. This field is immutable after installation.",
           "type": "array",

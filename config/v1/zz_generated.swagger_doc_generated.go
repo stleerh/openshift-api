@@ -2333,6 +2333,7 @@ var map_NetworkSpec = map[string]string{
 	"externalIP":           "externalIP defines configuration for controllers that affect Service.ExternalIP. If nil, then ExternalIP is not allowed to be set.",
 	"serviceNodePortRange": "The port range allowed for Services of type NodePort. If not specified, the default of 30000-32767 will be used. Such Services without a NodePort specified will have one automatically allocated from this range. This parameter can be updated after the cluster is installed.",
 	"networkDiagnostics":   "networkDiagnostics defines network diagnostics configuration.\n\nTakes precedence over spec.disableNetworkDiagnostics in network.operator.openshift.io. If networkDiagnostics is not specified or is empty, and the spec.disableNetworkDiagnostics flag in network.operator.openshift.io is set to true, the network diagnostics feature will be disabled.",
+	"observabilityEnabled": "ObservabilityEnabled is an optional field that enables network observability when set to true.  If the field is omitted or set to false, it does nothing.",
 }
 
 func (NetworkSpec) SwaggerDoc() map[string]string {
