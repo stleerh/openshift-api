@@ -16020,6 +16020,13 @@ func schema_openshift_api_config_v1_NetworkSpec(ref common.ReferenceCallback) co
 							Ref:         ref("github.com/openshift/api/config/v1.NetworkDiagnostics"),
 						},
 					},
+					"observabilityEnabled": {
+						SchemaProps: spec.SchemaProps{
+							Description: "ObservabilityEnabled is an optional field that enables network observability when set to true.  If the field is omitted or set to false, it does nothing.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
 				},
 				Required: []string{"clusterNetwork", "serviceNetwork", "networkType"},
 			},
